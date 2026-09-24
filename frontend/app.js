@@ -1,4 +1,4 @@
-const API_URL = "https://jae-inky.vercel.app/";
+const API_URL = "https://jae-61fb.onrender.com";
 
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
