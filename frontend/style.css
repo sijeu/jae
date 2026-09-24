@@ -1,108 +1,167 @@
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
+  }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle at 20% 20%, #f9d6de 0%, transparent 45%),
-              radial-gradient(circle at 80% 30%, #f6c6d4 0%, transparent 40%),
-              radial-gradient(circle at 50% 80%, #fbe2e7 0%, transparent 50%),
-              #fdf3f0;
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: radial-gradient(circle at 20% 20%, #f9d6de 0%, transparent 45%),
+radial-gradient(circle at 80% 30%, #f6c6d4 0%, transparent 40%),
+radial-gradient(circle at 50% 80%, #fbe2e7 0%, transparent 50%),
+#fdf3f0;
 }
 
 .card {
-  width: 340px;
-  max-width: 90%;
-  padding: 32px 28px;
-  background: #fffaf9;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.10);
-  text-align: center;
+width: 340px;
+max-width: 90%;
+padding: 32px 28px;
+background: #fffaf9;
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0,0,0,.10);
+text-align: center;
 }
 
 h1 {
-  margin: 0 0 20px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #333;
+margin: 0 0 20px;
+font-size: 15px;
+font-weight: 700;
+letter-spacing: 1px;
+color: #333;
 }
 
 .field {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #fdeef0;
-  border-radius: 10px;
-  padding: 10px 14px;
-  margin-bottom: 14px;
-  text-align: left;
+display: flex;
+align-items: center;
+gap: 10px;
+background: #fdeef0;
+border-radius: 10px;
+padding: 10px 14px;
+margin-bottom: 14px;
+text-align: left;
 }
 
 .icon {
-  flex: none;
-  font-size: 16px;
+flex: none;
+font-size: 16px;
 }
 
 input {
-  flex: 1;
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 14px;
-  color: #333;
+flex: 1;
+border: none;
+background: transparent;
+outline: none;
+font-size: 14px;
+color: #333;
 }
 
 button {
-  width: 100%;
-  margin-top: 6px;
-  padding: 12px;
-  border: 0;
-  border-radius: 999px;
-  background: #f5a3b2;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
+width: 100%;
+margin-top: 6px;
+padding: 12px;
+border: 0;
+border-radius: 999px;
+background: #f5a3b2;
+color: white;
+font-weight: 600;
+cursor: pointer;
 }
 
 button:hover {
-  background: #f28fa1;
+background: #f28fa1;
 }
 
 .forgot {
-  display: block;
-  margin-top: 14px;
-  font-size: 12px;
-  color: #e8899e;
-  text-decoration: none;
+display: block;
+margin-top: 14px;
+font-size: 12px;
+color: #e8899e;
+text-decoration: none;
 }
 
 .forgot:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 .switch {
-  margin-top: 16px;
-  font-size: 13px;
-  color: #666;
+margin-top: 16px;
+font-size: 13px;
+color: #666;
 }
 
 .switch a {
-  color: #e8899e;
-  font-weight: 600;
-  text-decoration: none;
+color: #e8899e;
+font-weight: 600;
+text-decoration: none;
 }
 
 .hidden {
-  display: none;
+display: none;
 }
 
-#message, #registerMessage {
-  min-height: 18px;
-  font-size: 13px;
+#message,
+#registerMessage {
+min-height: 18px;
+font-size: 13px;
+}
+
+/* =========================
+DASHBOARD
+========================= */
+
+.dashboard-body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: radial-gradient(circle at 20% 20%, #f9d6de 0%, transparent 45%),
+radial-gradient(circle at 80% 30%, #f6c6d4 0%, transparent 40%),
+radial-gradient(circle at 50% 80%, #fbe2e7 0%, transparent 50%),
+#fdf3f0;
+}
+
+.dashboard-container {
+background: #fffaf9;
+padding: 32px 28px;
+width: 340px;
+max-width: 90%;
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0,0,0,.10);
+text-align: center;
+}
+
+.dashboard-container h2 {
+margin: 0 0 20px;
+font-size: 20px;
+font-weight: 700;
+letter-spacing: 1px;
+color: #333;
+}
+
+.dashboard-container #message {
+min-height: 20px;
+margin: 0 0 20px;
+font-size: 13px;
+color: #666;
+line-height: 1.5;
+}
+
+.dashboard-container button {
+width: 100%;
+margin-top: 6px;
+padding: 12px;
+border: 0;
+border-radius: 999px;
+background: #f5a3b2;
+color: white;
+font-weight: 600;
+cursor: pointer;
+}
+
+.dashboard-container button:hover {
+background: #f28fa1;
 }
